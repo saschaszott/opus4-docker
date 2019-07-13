@@ -1,9 +1,9 @@
 # OPUS4 mit Docker Compose
 
-Es wird ein Cluster aus 3 Containern verwendet:
+Es wird ein Cluster aus 3 Docker Containern verwendet:
 
-* webapp (enthält PHP und Apache 2 zur Ausführung der OPUS4-Applikation)
-* db (enthält MySQL DBMS)
-* solr (enthält Solr Server und JDK)
+* Docker Container `opus4-webapp` (enthält PHP und Apache 2 zur Ausführung der OPUS4-Applikation)
+* Docker Container `opus4-db`(enthält MySQL DBMS)
+* Docker Container `opus4-solr` (enthält Solr Server und JDK)
 
-Die 3 Container sind in ein eigenes Netzwerk `opus4_net` eingesperrt. 
+Die drei Docker-Container sind in ein eigenes Netzwerk `opus4_net` eingesperrt.
