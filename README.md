@@ -1,5 +1,15 @@
 # OPUS4 mit Docker Compose
 
+## Voraussetzungen
+
+Auf dem **Docker Host** müssen zur Verfügung stehen:
+
+* Docker
+* Docker Compose
+* Git
+* Webbrowser
+* ggf. MySQL Workbench oder anderer MySQL Client (wenn Direktzugriff auf die MySQL-Datenbank von OPUS4 gewünscht)
+
 ## Vorbereitung
 
 Neues Verzeichnis auf dem Docker Host anlegen, z.B. mittels `mkdir opusdev`. In diesem Verzeichnis werden dann zwei Git-Repositories ausgecheckt:
