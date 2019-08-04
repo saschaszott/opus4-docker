@@ -48,7 +48,7 @@ Nun können die 3 Container mittels `docker-compose up -d --no-recreate` gebaut 
 
 Durch die definierten *Port Bindings* sind folgende Zugriff vom Docker Host aus möglich:
 
-* Über https://localhost/opus4 kann man auf die OPUS4-Webapp zugreifen.
+* Über https://localhost/opus4 kann man auf die OPUS4-Webapp zugreifen (Standard-Port 80).
 
 * Der MySQL-Server kann unter `localhost:3306` erreicht werden, z.B. mit der MySQL Workbench.
 
