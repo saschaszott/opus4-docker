@@ -5,13 +5,13 @@ services:
     image: solr:7.7.2
     container_name: opus4-solr
     volumes:
-      - ./opus4-search:/opt/solr/server/solr/mycores/opus4
+      - ./opus4-search:/opt/solr/server/solr/opus4
     ports:
       - "8983:8983"
-    entrypoint:
-      - docker-entrypoint.sh
-      - solr-precreate
-      - opus4
+    command:
+      - touch /opt/solr/server/solr/opus4/core.properties
+    command:
+      - solr-foreground
     networks:
       opus4_net:
         ipv4_address: 172.19.1.100
